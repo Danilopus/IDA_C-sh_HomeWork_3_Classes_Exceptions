@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDA_C-sh_HomeWork_3_Classes_Exceptions", "IDA_C-sh_HomeWork_3_Classes_Exceptions\IDA_C-sh_HomeWork_3_Classes_Exceptions.csproj", "{845D555E-F05F-47E4-BD4F-E5D8E0CCE590}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{845D555E-F05F-47E4-BD4F-E5D8E0CCE590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845D555E-F05F-47E4-BD4F-E5D8E0CCE590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845D555E-F05F-47E4-BD4F-E5D8E0CCE590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845D555E-F05F-47E4-BD4F-E5D8E0CCE590}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B135C53-A109-4DD0-A824-A7D0FF10421C}
+	EndGlobalSection
+EndGlobal
