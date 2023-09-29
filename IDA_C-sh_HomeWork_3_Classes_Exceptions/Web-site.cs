@@ -23,7 +23,11 @@ namespace IDA_C_sh_HomeWork
         public string name  { get { return _name; } set { _name = value;} }
         public string web_path  { get { return _web_path; } set { _web_path = value;} }
         public string comment   { get { return _comment; } set {  _comment = value;} }
-        //public byte ip_adress_octet_1 { get { return ip_adress_octet_1; } set { ip_adress_octet_1 = value; } }
+        // ip_adress_octet_1 - нечто несуществующее
+        public byte ip_adress_octet_1 { get { return ip_adress_octet_1; } set { ip_adress_octet_1 = value; } }
+         // Error CS1612  Cannot modify the return value of 'Web_site.ip_adress' because it is not a variable 
+        //  public byte ip_adress_octet_2 { get { return ip_adress._octet_2; } set { ip_adress._octet_2 = value; } }
+
         public IP_ADRESS ip_adress    { get {return  _ip_adress; } set { _ip_adress = value;} }
         public string ShowInfo()
         {
@@ -38,7 +42,7 @@ namespace IDA_C_sh_HomeWork
     struct IP_ADRESS
     {
         public byte _octet_1; // старший
-        byte _octet_2;
+        public byte _octet_2;
         byte _octet_3;
         byte _octet_4;
         public IP_ADRESS(byte octet_1, byte octet_2, byte octet_3, byte octet_4 )

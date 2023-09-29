@@ -3,8 +3,12 @@
 using IDA_C_sh_HomeWork;
 using Service;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Net;
+using System.Reflection;
+using System.Security.AccessControl;
 using System.Text;
 
 /// QUESTIONS ///
@@ -138,9 +142,23 @@ namespace IDA_C_sh_HomeWork
             new_web_Site.name = "C# guru coding site";
             new_web_Site.web_path = "http://mysuperCsharpsite.guru";
             new_web_Site.comment = "This is the newest guru C# site. No articles yet...";
-            //new_web_Site.ip_adress_octet_1 = 190; // ??? System.StackOverflowException: 'Exception_WasThrown'
-            new_web_Site.ip_adress = new( 192, 168, 11, 16 );
 
+             // ??? System.StackOverflowException: 'Exception_WasThrown'
+            //  new_web_Site.ip_adress_octet_1 = 190;
+
+              // Error CS1612  Cannot modify the return value of 'Web_site.ip_adress' because it is not a variable 
+             //
+            //   new_web_Site.ip_adress._octet_1 = 190;
+
+
+                 //   Error CS1061  'Web_site' does not contain a definition for 'something_that_doesnt_exist'
+                //    and no accessible extension method 'something_that_doesnt_exist' accepting a first argument
+               //     of type 'Web_site' could be found(are you missing a using directive or an assembly reference ?)	
+              //
+             //      new_web_Site.something_that_doesnt_exist = 190;
+            //
+
+            new_web_Site.ip_adress = new( 192, 168, 11, 16 );
             Console.WriteLine(new_web_Site.ShowInfo());
         }
         public static void Task_5(string work_name)
@@ -148,22 +166,18 @@ namespace IDA_C_sh_HomeWork
 
         {
             Console.Write(work_name + "\n");
-
             Journal new_journal = new Journal();
             new_journal.Name = "C# Guru Journal";
             new_journal.Date_foundation = new(2020, 1, 1);
             new_journal.Comment = "This is the coolest C# Guru Journal. No articles yet...";
             new_journal.Phone_number = "+7(900)111-55-66";
             new_journal.Email = "comebacksoon@csharpjournal.guru";
-
             Console.WriteLine(new_journal.ShowInfo());
-
         }
         public static void Task_6(string work_name)
-        /* Задание */        
+        /* Задание */
         {
             Console.Write(work_name + "\n");
-
             Shop new_shop = new Shop();
             new_shop.Name = "C# code shop";
 
